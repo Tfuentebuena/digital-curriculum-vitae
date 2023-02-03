@@ -1,17 +1,17 @@
 import React from 'react';
 import './Styles/MainPage.css';
 
-function MainPage(props : any) {
+function MainPage (props: any) {
   return (
     <div>
       <TitleHeader></TitleHeader>
       <BodyDescription bodyData = {props.data}>
-      </BodyDescription>  
+      </BodyDescription>
     </div>
   );
 }
 
-function TitleHeader(props : any) {
+function TitleHeader (props: any) {
   return (
     <div className="title-header-container">
       <p className="title-name">Tobias Fuentebuena Guardon</p>
@@ -20,7 +20,7 @@ function TitleHeader(props : any) {
   );
 }
 
-function BodyDescription(props : any) {
+function BodyDescription (props: any) {
   return (
     <div className="body-description-container">
       <AboutMe aboutMe ={props.bodyData.AboutMe}></AboutMe>
@@ -29,20 +29,19 @@ function BodyDescription(props : any) {
   );
 }
 
-function AboutMe(props : any) {
+function AboutMe (props: any) {
   const contentText = props.aboutMe;
   return (
     <div className="about-me-description">
       <p>{contentText}</p>
     </div>
-  )
+  );
 }
 
-function SectionContent(props : any) {
-
-  const contentList = props.Content.map((x : any) => {
-    return <li>{x}</li>
-  })
+function SectionContent (props: any) {
+  const contentList = props.Content.map((x: any) => {
+    return <li key={x.id}>{x}</li>;
+  });
 
   return (
     <div>
@@ -50,7 +49,7 @@ function SectionContent(props : any) {
         {contentList}
       </ul>
     </div>
-  )
+  );
 }
 
 export default MainPage;
