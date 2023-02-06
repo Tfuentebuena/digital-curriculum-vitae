@@ -12,6 +12,18 @@
             "Email": "tobiasfuentebuenaguardon@gmail.com",
             "Phone": "11-5812-3023",
             "LinkedIn": "https://www.linkedin.com/in/tobias-fuentebuena-guardon-95487a160/"
-        }
+        },
+        "Experience": [{
+            "Company": "Accenture",
+            "Position": "Full Stack Developer",
+            "Period": "jun. 2021 - dec. 2022",
+            "Description": "Full stack with .NET Framework, SQL Server and jQuery for internal data viz application. In it I also take another role as developer in the visual standards and accesibility team, being a referrer inside my scrum in these matters. Also, I was actively participating in the migration initiative for .NET 7 and React."
+        }, 
+        {
+            "Company": "Accenture",
+            "Position": "Integration Developer",
+            "Period": "dec. 2020 - jun. 2021",
+            "Description": "Development of integrations with propietary tool and SQL Server Integration Services for QlikView dashboard consuming data from SharePoint and external databases; I am also the deployment manager for this application nowadays. Later on, development of AWS Lambdas as integrations for EC2 web servers in another internal applications."
+        }]
 
     }
