@@ -3,10 +3,11 @@ import './Styles/MainPage.css';
 
 function MainPage (props: any) {
   return (
-    <div>
-      <header id='MainHeader'>
+    // The MainHeader section tag is there because of future ideas
+    <div id='BigBro'>
+      <section id='MainHeader'>
         <TitleHeader></TitleHeader>
-      </header>
+      </section>
       <section id='MainContent'>
         <BodyDescription bodyData = {props.data}>
         </BodyDescription>
@@ -17,21 +18,26 @@ function MainPage (props: any) {
 
 function TitleHeader (props: any) {
   return (
-    <div className="title-header-container">
-      <p className="title-name">Tobias Fuentebuena Guardon</p>
-      <p className="title-description">Fullstack Developer - Accesibility Enthusiast</p>
+    <div className='title-header-container'>
+      <h1 className='title-name'>Tobias Fuentebuena Guardon</h1>
+      <h2 className='title-description'>Fullstack Developer - Accesibility Enthusiast</h2>
     </div>
   );
 }
 
 function BodyDescription (props: any) {
   return (
-    <div className="body-description-container">
+    <div className='body-description-container'>
+      <div className='column'>
       <ContactInfo Content={props.bodyData.Contact}></ContactInfo>
+      <SimpleListContent Content={props.bodyData.TechnicalSkills} ClassName='bullet-list' Title='Technical Skills'></SimpleListContent>
+      <SimpleListContent Content={props.bodyData.OtherSkills} ClassName='bullet-list' Title='Other Skills'></SimpleListContent>
+      <SimpleListContent Content={props.bodyData.Education} ClassName='bullet-list' Title='Educational Background'></SimpleListContent>
+      </div>
+      <div className='column'>
       <AboutMe aboutMe ={props.bodyData.AboutMe}></AboutMe>
-      <SimpleListContent Content={props.bodyData.TechnicalSkills} ClassName="bullet-list" Title='Technical Skills'></SimpleListContent>
-      <SimpleListContent Content={props.bodyData.OtherSkills} ClassName="bullet-list" Title='Other Skills'></SimpleListContent>
       <ExperienceSector Content={props.bodyData.Experience}></ExperienceSector>
+      </div>
     </div>
   );
 }
@@ -39,7 +45,7 @@ function BodyDescription (props: any) {
 function AboutMe (props: any) {
   const contentText = props.aboutMe;
   return (
-    <div className="about-me-description-container">
+    <div className='about-me-description-container'>
       <h3>About Me</h3>
       <hr />
       <p>{contentText}</p>
@@ -110,8 +116,8 @@ function ExperienceSector (props: any) {
 
   return (
     <div className='experience-container'>
-      <hr />
       <h3>Experience</h3>
+      <hr />
         {contentList}
     </div>
   );

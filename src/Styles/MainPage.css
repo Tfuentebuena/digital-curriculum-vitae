@@ -1,47 +1,41 @@
-.App {
-  text-align: center;
+* {
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#BigBro {
+  max-width: 56.25em;
+  margin: 0 auto;
+  border: 2px solid #B900FF;
+  border-radius: 3px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    -webkit-animation: App-logo-spin infinite 20s linear;
-            animation: App-logo-spin infinite 20s linear;
-  }
+#BigBro #MainHeader {
+  background-color: #B900FF;
+  color: #FFF;
+  padding: 15px;
 }
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+#BigBro #MainHeader .title-name {
+  font-size: 3em;
+  margin: 0;
+}
+#BigBro #MainHeader .title-description {
+  font-size: 1.7em;
+  margin: 0;
+}
+#BigBro #MainContent .body-description-container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 15px;
+  gap: 3em;
 }
-
-.App-link {
-  color: #61dafb;
+#BigBro #MainContent .body-description-container .column {
+  flex: 50%;
 }
-
-@-webkit-keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#BigBro #MainContent .body-description-container .column h3 {
+  color: #7E00AE;
+  font-size: 1.3em;
+  margin-bottom: 0;
+  margin-left: 10px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#BigBro #MainContent .body-description-container .column hr {
+  height: 3px;
+  background-color: #7E00AE;
 }/*# sourceMappingURL=MainPage.css.map */
