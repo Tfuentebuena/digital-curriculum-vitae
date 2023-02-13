@@ -1,19 +1,15 @@
 // 16px = 1em
-
-// Universal styles. Will be in another file
-* {
-  font-family: Arial, Helvetica, sans-serif;
-}
+@import 'Generics.scss';
 
 #BigBro {
   max-width: 56.250em;
   margin: 0 auto;
-  border: 2px solid #B900FF;
+  border: 2px solid $main-color;
   border-radius: 3px;
 
   #MainHeader {
-    background-color: #B900FF;
-    color: #FFF;
+    background-color: $main-color;
+    color: $white;
     padding: 15px;
 
     .title-name {
@@ -38,18 +34,30 @@
 
         //Generic styles
         h3 {
-          color: #7E00AE;
+          color: $white;
           font-size: 1.3em;
           margin-bottom: 0;
-          margin-left: 10px;
+          padding: 5px;
+          background: linear-gradient(0.25turn, $main-color, $white);
+          border-radius: 3px;
         }
 
         hr {
           height: 3px;
-          background-color: #7E00AE;
+          background-color: $main-color;
         }
         //End of Generic styles
-
+        
+        .email-list-item, .linkedin-list-item {
+          a {
+            &:visited {
+              color: $main-grey;
+            }
+            &:active {
+              color: $main-color;
+            }
+          }
+        }
       }
 
     }

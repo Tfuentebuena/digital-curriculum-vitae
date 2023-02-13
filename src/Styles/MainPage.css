@@ -5,11 +5,11 @@
 #BigBro {
   max-width: 56.25em;
   margin: 0 auto;
-  border: 2px solid #B900FF;
+  border: 2px solid #7801b9;
   border-radius: 3px;
 }
 #BigBro #MainHeader {
-  background-color: #B900FF;
+  background-color: #7801b9;
   color: #FFF;
   padding: 15px;
 }
@@ -30,12 +30,20 @@
   flex: 50%;
 }
 #BigBro #MainContent .body-description-container .column h3 {
-  color: #7E00AE;
+  color: #FFF;
   font-size: 1.3em;
   margin-bottom: 0;
-  margin-left: 10px;
+  padding: 5px;
+  background: linear-gradient(0.25turn, #7801b9, #FFF);
+  border-radius: 3px;
 }
 #BigBro #MainContent .body-description-container .column hr {
   height: 3px;
-  background-color: #7E00AE;
+  background-color: #7801b9;
+}
+#BigBro #MainContent .body-description-container .column .email-list-item a:visited, #BigBro #MainContent .body-description-container .column .linkedin-list-item a:visited {
+  color: #5d5d5d;
+}
+#BigBro #MainContent .body-description-container .column .email-list-item a:active, #BigBro #MainContent .body-description-container .column .linkedin-list-item a:active {
+  color: #7801b9;
 }/*# sourceMappingURL=MainPage.css.map */
